@@ -243,7 +243,7 @@ private theorem inner_zero_iff_aux_lemma [DecidableEq n] (hA₁ : A.mat.PosSemid
             simp_all only [Matrix.zero_apply, map_zero, mul_zero, add_zero, Finset.sum_const_zero]
         exact h_trace_zero_iff _;
       convert h_trace_zero_iff using 3
-      simp [ hC, hD, Matrix.mul_assoc ];
+      simp [ Matrix.mul_assoc ];
       rw [ ← Matrix.trace_mul_comm ]
       have h_trace_cyclic : Matrix.trace (D.conjTranspose * D * C.conjTranspose * C) = Matrix.trace (C * D.conjTranspose * D * C.conjTranspose) := by
         rw [ ← Matrix.trace_mul_comm ]
