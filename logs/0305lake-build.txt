@@ -1,0 +1,329 @@
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (the-experiment-branch)
+$
+ *  History restored
+
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ git status
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ git status
+On branch main
+Your branch is up to date with 'upstream/main'.
+
+nothing to commit, working tree clean
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ el
+bash: el: command not found
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lakelake
+ *  History restored
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+installing leantar 0.1.15
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  706k  100  706k    0     0  1315k      0 --:--:-- --:--:-- --:--:-- 1315k
+
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+Attempting to download 7335 file(s) from leanprover-community/mathlib4 cache
+Downloaded: 7335 file(s) [attempted 7335/7335 = 100%, 94 KB/s]]
+Decompressing 7335 file(s)
+Unpacked in 24207 ms
+Completed successfully!
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake build
+⣯ [2655/7414] Running Mathlib.SetTheory.Game.Basic (+ 7 more)
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake update
+info: toolchain not updated; already up-to-date
+info: Cli: checking out revision '91c18fa62838ad0ab7384c03c9684d99d306e1da'
+info: mathlib: running post-update hooks
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+No files to download
+Decompressing 7335 file(s)
+Unpacked in 1463 ms
+Completed successfully!
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+No files to download
+Decompressing 7335 file(s)
+Unpacked in 394 ms
+Completed successfully!
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake build
+⣯ [2439/7414] Running Mathlib.Data.Finset.PiInduction (+ 7 more)
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ elan
+elan 4.1.2 (58e8d545e 2025-05-26)
+The Lean toolchain installer
+
+USAGE:
+    elan.exe [FLAGS] <SUBCOMMAND>
+
+FLAGS:
+    -v, --verbose    Enable verbose output
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+SUBCOMMANDS:
+    show           Show the active and installed toolchains
+    default        Set the default toolchain
+    toolchain      Modify or query the installed toolchains
+    override       Modify directory toolchain overrides
+    run            Run a command with an environment configured for a given toolchain
+    which          Display which binary will be run for a given command
+    self           Modify the elan installation
+    completions    Generate completion scripts for your shell
+    help           Prints this message or the help of the given subcommand(s)
+
+DISCUSSION:
+    executable.
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ ^C
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$
+ *  History restored
+
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+Current branch: HEAD
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+Current branch: HEAD
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+
+
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake exe cache get
+Current branch: HEAD
+Using cache (Azure) from origin: leanprover-community/mathlib4
+No files to download
+Decompressing 7335 file(s)
+Unpacked in 3809 ms
+Completed successfully!
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ lake build
+⚠ [6405/7414] Built ClassicalInfo.Distribution
+warning: ClassicalInfo/Distribution.lean:144:9: declaration uses 'sorry'
+⚠ [6992/7414] Built QuantumInfo.ForMathlib.Matrix
+warning: QuantumInfo/ForMathlib/Matrix.lean:1577:14: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = Bᴴ * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+⚠ [7002/7414] Built QuantumInfo.ForMathlib.MatrixNorm.TraceNorm
+warning: QuantumInfo/ForMathlib/MatrixNorm/TraceNorm.lean:39:8: declaration uses 'sorry'
+warning: QuantumInfo/ForMathlib/MatrixNorm/TraceNorm.lean:104:8: declaration uses 'sorry'
+⚠ [7053/7414] Built QuantumInfo.ForMathlib.HermitianMat.Order
+warning: QuantumInfo/ForMathlib/HermitianMat/Order.lean:265:10: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = Bᴴ * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+⚠ [7079/7414] Built QuantumInfo.ForMathlib.HermitianMat.Inner
+warning: QuantumInfo/ForMathlib/HermitianMat/Inner.lean:246:13: This simp argument is unused:
+  hC
+
+Hint: Omit it from the simp argument list.
+  simp [̵ ̵h̵C̵,̵ ̵h̵D̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵s̵s̵o̵c̵ ̵]̵[̲h̲D̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: QuantumInfo/ForMathlib/HermitianMat/Inner.lean:246:17: This simp argument is unused:
+  hD
+
+Hint: Omit it from the simp argument list.
+  simp [̵ ̵h̵C̵,̵ ̵h̵D̵,̵ ̵M̵a̵t̵r̵i̵x̵.̵m̵u̵l̵_̵a̵s̵s̵o̵c̵ ̵]̵[̲h̲C̲,̲ ̲M̲a̲t̲r̲i̲x̲.̲m̲u̲l̲_̲a̲s̲s̲o̲c̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [7122/7414] Built QuantumInfo.ForMathlib.Unitary
+warning: QuantumInfo/ForMathlib/Unitary.lean:71:4: declaration uses 'sorry'
+⚠ [7382/7414] Built QuantumInfo.ForMathlib.HermitianMat.LogExp
+warning: QuantumInfo/ForMathlib/HermitianMat/LogExp.lean:139:4: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = B.conjTranspose * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+⚠ [7389/7414] Built QuantumInfo.Finite.Ensemble
+warning: QuantumInfo/Finite/Ensemble.lean:186:8: declaration uses 'sorry'
+⚠ [7391/7414] Built QuantumInfo.Finite.CPTPMap.MatrixMap
+warning: QuantumInfo/Finite/CPTPMap/MatrixMap.lean:124:4: declaration uses 'sorry'
+warning: QuantumInfo/Finite/CPTPMap/MatrixMap.lean:361:21: declaration uses 'sorry'
+⚠ [7392/7414] Built QuantumInfo.Finite.CPTPMap.Unbundled
+warning: QuantumInfo/Finite/CPTPMap/Unbundled.lean:356:6: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = B.conjTranspose * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+warning: QuantumInfo/Finite/CPTPMap/Unbundled.lean:358:6: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = B.conjTranspose * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+warning: QuantumInfo/Finite/CPTPMap/Unbundled.lean:588:22: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = B.conjTranspose * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+warning: QuantumInfo/Finite/CPTPMap/Unbundled.lean:745:8: declaration uses 'sorry'
+⚠ [7394/7414] Built QuantumInfo.Finite.CPTPMap.CPTP
+warning: QuantumInfo/Finite/CPTPMap/CPTP.lean:362:4: declaration uses 'sorry'
+warning: QuantumInfo/Finite/CPTPMap/CPTP.lean:367:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/CPTPMap/CPTP.lean:449:8: declaration uses 'sorry'
+⚠ [7395/7414] Built QuantumInfo.Finite.CPTPMap.Dual
+warning: QuantumInfo/Finite/CPTPMap/Dual.lean:36:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/CPTPMap/Dual.lean:48:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/CPTPMap/Dual.lean:57:10: `Matrix.posSemidef_iff_eq_conjTranspose_mul_self` has been deprecated: Use `CStarAlgebra.nonneg_iff_eq_star_mul_self` instead
+
+Note: The updated constant has a different type:
+  ∀ {A : Type u_1} [inst : PartialOrder A] [inst_1 : NonUnitalRing A] [inst_2 : TopologicalSpace A]
+    [inst_3 : StarRing A] [inst_4 : Module ℝ A] [inst_5 : SMulCommClass ℝ A A] [inst_6 : IsScalarTower ℝ A A]
+    [StarOrderedRing A] [NonUnitalContinuousFunctionalCalculus ℝ A IsSelfAdjoint] [NonnegSpectrumClass ℝ A]
+    [IsTopologicalRing A] [T2Space A] {a : A}, 0 ≤ a ↔ ∃ b, a = star b * b
+instead of
+  ∀ {𝕜 : Type u_1} {n : Type u_2} [inst : RCLike 𝕜] [inst_1 : Fintype n] {A : Matrix n n 𝕜},
+    A.PosSemidef ↔ ∃ B, A = Bᴴ * B
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.posSemidef_iff_eq_conjTranspose_mul_self` to `CStarAlgebra.nonneg_iff_eq_star_mul_self x`).
+⚠ [7399/7414] Built QuantumInfo.Finite.Distance.Fidelity
+warning: QuantumInfo/Finite/Distance/Fidelity.lean:27:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Distance/Fidelity.lean:50:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Distance/Fidelity.lean:55:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Distance/Fidelity.lean:59:8: declaration uses 'sorry'
+⚠ [7403/7414] Built QuantumInfo.Finite.Entropy.SSA
+warning: QuantumInfo/Finite/Entropy/SSA.lean:109:6: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/SSA.lean:166:8: declaration uses 'sorry'
+⚠ [7404/7414] Built QuantumInfo.Finite.Entropy.Relative
+warning: QuantumInfo/Finite/Entropy/Relative.lean:165:6: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:191:6: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:309:16: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:341:16: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:359:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:954:16: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:982:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1059:6: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1064:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1073:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1098:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1113:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1117:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Entropy/Relative.lean:1124:8: declaration uses 'sorry'
+⚠ [7405/7414] Built QuantumInfo.Finite.Entropy.DPI
+warning: QuantumInfo/Finite/Entropy/DPI.lean:434:8: declaration uses 'sorry'
+⚠ [7407/7414] Built QuantumInfo.Finite.Capacity
+warning: QuantumInfo/Finite/Capacity.lean:122:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Capacity.lean:157:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Capacity.lean:217:8: declaration uses 'sorry'
+warning: QuantumInfo/Finite/Capacity.lean:221:8: declaration uses 'sorry'
+✖ [7412/7414] Building QuantumInfo.Finite.ResourceTheory.SteinsLemma
+trace: .> LEAN_PATH=C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\Cli\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\batteries\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\Qq\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\aesop\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\proofwidgets\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\importGraph\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\LeanSearchClient\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\plausible\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\packages\mathlib\.lake\build\lib\lean;C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\build\lib\lean c:\Users\eiKevinZ\.elan\toolchains\leanprover--lean4---v4.24.0\bin\lean.exe C:\Users\eiKevinZ\Lean-QuantumInfo\QuantumInfo\Finite\ResourceTheory\SteinsLemma.lean -o C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\build\lib\lean\QuantumInfo\Finite\ResourceTheory\SteinsLemma.olean -i C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\build\lib\lean\QuantumInfo\Finite\ResourceTheory\SteinsLemma.ilean -c C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\build\ir\QuantumInfo\Finite\ResourceTheory\SteinsLemma.c --setup C:\Users\eiKevinZ\Lean-QuantumInfo\.lake\build\ir\QuantumInfo\Finite\ResourceTheory\SteinsLemma.setup.json --json
+error: QuantumInfo/Finite/ResourceTheory/SteinsLemma.lean:1200:8: Tactic `apply` failed: could not unify the conclusion of `@MState.nonneg`
+  ∀ (self : MState ?d), 0 ≤ ↑self
+with the goal
+  R2 ρ σ ≠ ⊤
+
+Note: The full type of `@MState.nonneg` is
+  ∀ {d : Type ?u.360394} [inst : Fintype d] [inst_1 : DecidableEq d] (self : MState d), 0 ≤ ↑self
+
+case h₂.h.ha.h.h.bc.hb
+ι : Type u_1
+inst✝ : UnitalFreeStateTheory ι
+i : ι
+ρ : MState (H i)
+σ : (n : ℕ) → ↑IsFree
+ε ε' : Prob
+hε'₁ : 0 < ε'
+hε'₂ : ε' < ε
+hε : ε < 1
+hR1R2 : R1 ρ ε < R2 ρ σ
+hR1 : R1 ρ ε ≠ ⊤
+hR2 : R2 ρ σ ≠ ⊤
+hε₀✝ : 0 < ε₀_func ρ ε σ ε'
+m : ℕ
+hm : m ≥ 1 ∧ 𝐃(ρ ⊗ᵣ^[m]‖↑(σ m)) / ↑m < R2 ρ σ + ↑⟨ε₀_func ρ ε σ ε', ⋯⟩
+ℰ : (n : ℕ) → CPTPMap (H (i ^ n)) (H (i ^ n)) ℂ := ⋯
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ mkdir -p logs
+
+eiKevinZ@LAPTOP-eiKevinZ MINGW64 ~/Lean-QuantumInfo (main)
+$ script logs/0305lake-build.txt
+bash: script: command not found
